@@ -1,0 +1,71 @@
+#sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color:whitesmoke;
+    /* color: ; */
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-title > span {
+    display: none;
+  }
+  
+  .sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .sidebar-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .sidebar-list-item {
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+  }
+  
+  .sidebar-list-item:hover {
+    background-color: #096B88;
+    cursor: pointer;
+    color: whitesmoke;
+  }
+  .headingContainer img {
+    /* Use a valid URL or a relative path for the image */
+    src: url("blob:https://web.whatsapp.com/b735dedb-5031-4cd1-9ab0-a315eed3bf79");
+    /* Additional styling if needed */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+  }
+  
+  .sidebar-list-item > a {
+    text-decoration: none;
+    /* color: ; */
+  }
+  
+  .sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
+  }
+  @media screen and (max-width: 992px) {
+    #sidebar {
+        display: none;
+      }
+
+      .sidebar-title > span {
+        display: inline;
+      }
+  }
+ 
